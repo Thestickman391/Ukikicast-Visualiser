@@ -7,8 +7,16 @@
 	</head>
 	<body>
 		<div id="content">
-		  <canvas id="canvas"></canvas>
-		  <audio crossorigin="anonymous" id="audio1"></audio>
+		 <div id="interviewee">
+		      <img id="intervieweeIcon" src="./ted.png">
+			  <canvas id="canvasInterviewee"></canvas>
+			  <audio crossorigin="anonymous" id="audio2"></audio>
+		  </div>
+		  <div id="interviewer">
+			  <canvas id="canvasInterviewer"></canvas>
+		      <img id="interviewerIcon" src="./ted.png">
+			  <audio crossorigin="anonymous" id="audio1"></audio>
+		  </div>
 		  <button onClick="start()" id="start">start</button>
 		  <div id="imageBackground"></div>
 		</div>

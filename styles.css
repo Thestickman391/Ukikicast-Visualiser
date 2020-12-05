@@ -1,14 +1,16 @@
-#canvas {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
+#canvasInterviewer {
   height: 100%;
+  flex-grow: 3;
+}
+
+#canvasInterviewee {
+  height: 100%;
+  flex-grow: 3;
 }
 
 #imageBackground {
-	-o-object-fit: cover;
-	   object-fit: cover;
+	object-fit: cover;
+	background-size: cover;
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
@@ -19,8 +21,39 @@
 	background-image: url("./BoB.png");
     background-position-y: center;
     background-position-x: center;
-	-webkit-filter: blur(15px);
-	        filter: blur(15px);
+	filter: blur(50px);
+}
+
+#interviewer {
+    bottom: 0; /* attaches the element to the bottom */
+    left: 0; /* attaches the element to the left-side */
+    right: 0; /* attaches the element to the right-side */
+	height: 27.333%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	z-index: 100;
+	position: absolute;
+}
+
+#interviewerIcon {
+	height: 100%;
+}
+
+#interviewee {
+    top: 0; /* attaches the element to the bottom */
+    left: 0; /* attaches the element to the left-side */
+    right: 0; /* attaches the element to the right-side */
+	height: 27.333%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	z-index: 100;
+	position: absolute;
+}
+
+#intervieweeIcon {
+	height: 100%;
 }
 
 .content {
