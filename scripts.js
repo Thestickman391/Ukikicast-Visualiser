@@ -1,4 +1,10 @@
 function start() {
+	var button = document.getElementById("start"); 
+	button.style.visibility = 'hidden';
+
+	var intro = document.getElementById("intro");
+	intro.play();
+
 	var audio1 = document.getElementById("audio1");
 	audio1.src = "./thing - 000.wav";
 	audio1.load();
