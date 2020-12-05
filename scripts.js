@@ -15,7 +15,7 @@ function start() {
 	src1.connect(analyser1);
 	analyser1.connect(context1.destination);
 
-	analyser1.fftSize = 512;
+	analyser1.fftSize = 256;
 
 	var bufferLength1 = analyser1.frequencyBinCount;
 	console.log(bufferLength1);
@@ -72,7 +72,7 @@ function start() {
 	src2.connect(analyser2);
 	analyser2.connect(context2.destination);
 
-	analyser2.fftSize = 512;
+	analyser2.fftSize = 256;
 
 	var bufferLength2 = analyser2.frequencyBinCount;
 	console.log(bufferLength2);

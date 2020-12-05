@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SuperMario256";
+  src: url("SuperMario256.ttf") format("truetype");
+}
+
 #canvasInterviewer {
   height: 100%;
   flex-grow: 3;
@@ -24,11 +29,20 @@
 	filter: blur(50px);
 }
 
+#label {
+	z-index:150; 
+	position: absolute; 
+	font-size: 17vh; 
+	padding-top: 7vh; 
+	height: auto; 
+	-webkit-text-stroke: 20px black;
+	paint-order: stroke fill;
+}
 #interviewer {
     bottom: 0; /* attaches the element to the bottom */
     left: 0; /* attaches the element to the left-side */
     right: 0; /* attaches the element to the right-side */
-	height: 27.333%;
+	height: 30%;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
@@ -44,7 +58,7 @@
     top: 0; /* attaches the element to the bottom */
     left: 0; /* attaches the element to the left-side */
     right: 0; /* attaches the element to the right-side */
-	height: 27.333%;
+	height: 30%;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
@@ -56,7 +70,29 @@
 	height: 100%;
 }
 
-.content {
+#ukikicastLogo {
+	display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+	height: 50%;
+	width: 100%;
+	z-index: 500;
+	position: absolute;
+}
+
+#ukikicastLogo > img {
+	/*drop-shadow:rgba(0,0,0,0.5) 0px 0px 24px; */
+	filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+}
+
+#content {
+	overflow-y: hidden;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -67,6 +103,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+			    align-items: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
@@ -83,6 +120,7 @@ audio {
 }
 
 * {
+	font-family: "SuperMario256";
 	margin: 0;
 	padding: 0;
 	height: 100%;
