@@ -6,9 +6,6 @@ function start() {
 	intro.play();
 
 	var audio1 = document.getElementById("audio1");
-	audio1.src = "./thing - 000.wav";
-	audio1.load();
-	audio1.play();
 	var context1 = new AudioContext();
 	var src1 = context1.createMediaElementSource(audio1);
 	var analyser1 = context1.createAnalyser();
@@ -58,14 +55,13 @@ function start() {
 		x1 += barWidth1 - 1;
 	  }
 	}
-
-	audio1.play();
+	
+	setTimeout(function () {
+        audio1.play();
+    }, 12079);
 	renderFrame1();
 	
 	var audio2 = document.getElementById("audio2");
-	audio2.src = "./23 - 10,000 Spoons.mp3";
-	audio2.load();
-	audio2.play();
 	var context2 = new AudioContext();
 	var src2 = context2.createMediaElementSource(audio2);
 	var analyser2 = context2.createAnalyser();
@@ -115,7 +111,10 @@ function start() {
 		x2 += barWidth2 - 1;
 	  }
 	}
-
-	audio2.play();
+	
+	
+	setTimeout(function () {
+        audio2.play();
+    }, 18829);
 	renderFrame2();
 };

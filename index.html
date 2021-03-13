@@ -8,20 +8,24 @@
 	<body>
 		<div id="content">
 		 <div id="interviewee">
-		      <img id="intervieweeIcon" src="./fifdspence.jpg">
-			  <div id="label" style="color: rgb(255,64,64);">fifdspence</div>
+		      <img id="intervieweeIcon" src="./tlyerkhen.jpg">
+			  <div id="label" style="color: rgb(255,64,64);">Tyler Kehne</div>
 			  <canvas id="canvasInterviewee"></canvas>
-			  <audio crossorigin="anonymous" id="audio2"></audio>
+			  <audio crossorigin="anonymous" src="tyler_mixdown.wav" id="audio2"></audio>
 		  </div>
 		  <div id="interviewer">
 			  <div id="label" style="color: rgb(0,170,255);">1ted59</div>
 			  <canvas id="canvasInterviewer"></canvas>
 		      <img id="interviewerIcon" src="./ted.jpg">
-			  <audio crossorigin="anonymous" id="audio1"></audio>
+			  <audio crossorigin="anonymous" src="ted_mixdown.wav" id="audio1"></audio>
 		  </div>
 		  <button onClick="start()" id="start">start</button>
-		  <div id="ukikicastLogo"><img src="./ukikicast_logo.png"></div>
-		  <video src="intro.webm" type="video/webm" id="intro"></video>
+		  <div id="ukikicastLogo">
+			  <img src="./santa_ukiki.svg">
+		  </div>
+		  <video id="snow" autoplay loop muted playsinline src="snow.webm"></video>
+		  <video id="intro" playsinline src="cool.webm">
+		  </video>
 		  <div id="imageBackground"></div>
 		</div>
 		<script src="./scripts.js"></script>
